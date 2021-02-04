@@ -13,10 +13,10 @@ class HomeController extends Controller
 
         $messages = Message::all();
 
-        foreach ($messages as $message) {
-            echo $message->title;
-        }
-        die;
-        return view('home');
+
+        // die;
+        return view('home', [
+            'messages' => $messages
+        ]);
     }
 }
