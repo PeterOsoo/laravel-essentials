@@ -9,9 +9,13 @@
     @foreach ($messages as $message)
 
     <li>
-        {{$message->title}} -
+        <strong>{{$message->title}}</strong>
+        <br>
         {{$message->content}}
+        <br>
+        {{$message->created_at}}
     </li>
+    <br>
 
     @endforeach
 </ul>
