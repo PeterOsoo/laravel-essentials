@@ -26,6 +26,8 @@
         <br>
         <!-- {{$message->created_at-> format('d-m-Y H:i')}} -->
         {{$message->created_at-> diffForHumans()}}
+        <br>
+        <a href="/message/{{$message->id}} ">View</a>
     </li>
     <br>
 

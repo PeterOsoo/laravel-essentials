@@ -21,4 +21,19 @@ class MessageController extends Controller
 
         return redirect('/');
     }
+
+    public function view($id)
+    {
+        $message = Message::findOrFail($id);
+
+        // echo $message->title;
+
+        return view(
+            'message',
+            [
+
+                'message' => $message
+            ]
+        );
+    }
 }
