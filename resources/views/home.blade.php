@@ -13,7 +13,8 @@
         <br>
         {{$message->content}}
         <br>
-        {{$message->created_at}}
+        {{$message->created_at-> format('d-m-Y H:i')}}
+        {{$message->created_at-> diffForHumans()}}
     </li>
     <br>
 
