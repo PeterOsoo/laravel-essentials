@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('master')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laravel</title>
-</head>
+@section('title', 'Homepage')
 
-<body>
-    <h1>Essentials in Laravel 8 </h1>
-    <h3> {{date('Y-m-d')}} </h3>
-</body>
+@section('content')
 
-</html>
+<h1>Content</h1>
+@endsection
