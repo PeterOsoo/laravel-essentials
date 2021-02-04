@@ -8,7 +8,8 @@
 </head>
 
 <body>
-    <h1>Essentials in Laravel </h1>
+    <h1>Essentials in Laravel 8 </h1>
+    <h3> {{date('Y-m-d')}} </h3>
 </body>
 
 </html>
