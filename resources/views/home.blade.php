@@ -4,5 +4,9 @@
 
 @section('content')
 
-<h1>Content</h1>
+<h3>Recent Messages:</h3>
+<ul>
+    <li>
+        Message 1</li>
+</ul>
 @endsection

@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <h1>Rateng Ondiek</h1>
     @yield('content')
 </body>
 
