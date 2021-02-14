@@ -8,8 +8,13 @@
 <form action="/create" method="post">
     {{csrf_field()}}
     <input type="text" name="title" placeholder="Enter Title...">
+    <br>
+    <br>
     <input type="text" name="content" placeholder="Enter Content...">
-    <button type="submit">Submit</button>
+    <br>
+    <br>
+    <button type="submit">Post</button>
+    <br>
 </form>
 
 <br>
@@ -20,7 +25,9 @@
     @foreach ($messages as $message)
 
     <li>
-        <strong>{{$message->title}}</strong>
+        <div class="">
+            <strong>{{$message->title}}</strong>
+        </div>
         <br>
         {{$message->content}}
         <br>

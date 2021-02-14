@@ -8,7 +8,8 @@
 </head>
 
 <body>
-    <h1>Rateng Ondiek</h1>
+    <h1>Mavitu Blog</h1>
+    <a href="{{ route('home') }}">Home</a>
     @yield('content')
 </body>
 
