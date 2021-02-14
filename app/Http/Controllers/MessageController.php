@@ -50,4 +50,15 @@ class MessageController extends Controller
             ]
         );
     }
+
+    function updateMessage(Request $request)
+    {
+
+        $message = Message::find($request->id);
+        // $message->title = $request->title;
+        // $message->content = $request->content;
+        // $message->save();
+
+        dd($message);
+    }
 }
