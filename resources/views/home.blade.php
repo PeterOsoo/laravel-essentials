@@ -35,6 +35,7 @@
         {{$message->created_at-> diffForHumans()}}
         <br>
         <a href="/message/{{$message->id}} ">View</a>
+        <a href="/edit/{{$message->id}} ">Edit</a>
     </li>
     <br>
 

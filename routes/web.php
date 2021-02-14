@@ -20,3 +20,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::post('/create', [MessageController::class, 'create']);
 
 Route::get('/message/{id}', [MessageController::class, 'view']);
+
+Route::get('/edit/{id}', [MessageController::class, 'showMessage']);
+
+Route::post('edit', [MessageController::class, "updateMessage"]);

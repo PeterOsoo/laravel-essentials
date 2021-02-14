@@ -40,6 +40,7 @@
         {{-- {{$message->created_at-> format('d-m-Y H:i')}} --}}
         {{$message->created_at-> format('d/m/Y')}}
     </p>
+
 </div>
 
 

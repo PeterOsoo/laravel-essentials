@@ -36,4 +36,18 @@ class MessageController extends Controller
             ]
         );
     }
+
+    public function showMessage($id)
+    {
+
+        $message = Message::find($id);
+        // echo $messages->title;
+
+        return view(
+            'edit',
+            [
+                'message' => $message
+            ]
+        );
+    }
 }
